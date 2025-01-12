@@ -28,6 +28,14 @@
         </p><p>
         7. In for in loop while traversing through an object why the output is undefined when accessing using dot operator ?<br>
         The output is undefined because obj.key is looking for a property literally named "key" in the object, instead of dynamically accessing the property using the value of the key variable.
-</p>
+        </p>
+        <p>
+            8. Why Components should start with Capital letter? <br>
+            In React, component names should start with a capital letter because JSX distinguishes between custom components and native HTML tags based on the capitalization; lowercase names are treated as HTML tags, whereas uppercase names are recognized as user-defined components, ensuring they are correctly interpreted by the JSX compiler.
+        </p>
+        <p>
+            9.While exporting a component why default keyword is mandatory?
+            The default keyword is used when exporting a component in React to specify that this is the main component or module being exported from the file, making it simpler to import without needing to know the exact name of the component. Without default, each import would require curly braces and a precise name match, whereas default allows for a single straightforward import syntax, streamlining the process and reducing potential errors.
+        </p>
     </body>
 </html>

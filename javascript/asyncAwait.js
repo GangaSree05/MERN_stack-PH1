@@ -11,6 +11,13 @@ commentCode=async()=>{
         commentingPost("Comment posted to the post created")
        },5000);
     });
+};
+async function likeCode(){
+    return new Promise((likingPost)=>{
+        setTimeout(()=>{
+            likingPost("Liked the post created");
+        },2000);
+ });
 }
 
 async function createPost(){
@@ -27,4 +34,4 @@ async function createPost(){
    console.log(await likeCode());
    console.log(await commentCode());
 }
-createPost()
+createPost();
