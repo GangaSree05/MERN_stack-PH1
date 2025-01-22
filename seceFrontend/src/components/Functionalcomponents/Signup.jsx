@@ -1,4 +1,4 @@
-import "../../../../css/signup.css";
+import '../../css/Signup.css'
 import {useNavigate, Link} from "react-router-dom";
 const Signup=(p)=>{
     const navigate = useNavigate();
