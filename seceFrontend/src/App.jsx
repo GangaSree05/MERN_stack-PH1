@@ -9,6 +9,7 @@ import Signup from './components/Functionalcomponents/Signup';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import UseState from './components/Functionalcomponents/Hooks/useState';
 import UseEffect from './components/Functionalcomponents/Hooks/UseEffect';
+import UseEffectApi from './components/Functionalcomponents/Hooks/UseEffectAPI';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/contact" element={<Contact />} ></Route>
       <Route path="/usestate" element={<UseState />} ></Route>
       <Route path="/useeffect" element={<UseEffect/>}> </Route>
+      <Route path="/useapi" element={<UseEffectApi/>}> </Route>
       <Route path="/signup" element={<Signup />} ></Route>
       
      </Routes>

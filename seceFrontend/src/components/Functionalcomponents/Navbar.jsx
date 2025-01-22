@@ -30,6 +30,9 @@ const Navbar = () => {
             <li>
               <Link to="useeffect" className='link'>UseEffect</Link>
             </li>
+            <li>
+              <Link to="useapi" className='link'>UseEffectAPI</Link>
+            </li>
           </ul>)}
         </div>
         <li><Link to='/signup' className="link">Signup</Link></li>
