@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../css/Nav.css";
+
 
 const Navbar = () => {
  var styling={textDecoration:"underline",
@@ -11,10 +11,11 @@ const Navbar = () => {
     <header>
     <nav>
       <ol>
-        <li>Home</li>
-        <li>About</li>
-        <li>Gallery</li>
-        <li>Contact</li>
+        <li><link to='/' className="Link">Home</link></li>
+        <li><link to='/about' className='Link'>About</link></li>
+        <li><link to='/gallary' classname='Link'>Gallery</link></li>
+        <li><link to ='/contact' classname='Link'>Contact</link></li>
+        <li><link to='/signup' className='Link'>Signup</link></li>
       </ol>
     </nav>
     </header>
