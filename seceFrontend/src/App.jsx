@@ -1,6 +1,6 @@
 
 import './App.css'
-import Home from './components/FunctionalComponents/Home';
+
 import About from './components/FunctionalComponents/About';
 import Gallery from './components/FunctionalComponents/gallery';
 import Contact from './components/FunctionalComponents/Contact';
@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path="/" element={<Home />} ></Route>
+      
       <Route path="/about" element={<About />} ></Route>
       <Route path="/gallery" element={<Gallery page="Gallery" img ="time"/>} ></Route>
       <Route path="/contact" element={<Contact />} ></Route>
