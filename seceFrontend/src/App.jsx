@@ -14,7 +14,6 @@ import UseReducer from './components/Functionalcomponents/Hooks/UseReducer';
 import UseEffectAPIimage from './components/Functionalcomponents/Hooks/UseEffectAPIimage';
 import UseRef from './components/Functionalcomponents/Hooks/Useref';
 import UseMemo from './components/Functionalcomponents/Hooks/Usememo';
-import UseCallpage from './components/Functionalcomponents/Hooks/UseCallback';
 import UseCallback from './components/Functionalcomponents/Hooks/UseCallback';
 
 function App() {
@@ -36,6 +35,7 @@ function App() {
       <Route path="/usememo" element={<UseMemo/>}></Route>
       <Route path="/callback" element={<UseCallback/>}></Route>
       <Route path="/signup" element={<Signup />} ></Route>
+      
       
      </Routes>
     </BrowserRouter>

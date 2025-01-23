@@ -13,9 +13,9 @@ const UseMemo=()=>
         backgroundColor: dark ? "black" : "white",
         color: dark ? "white" : "black"
     }
-    var doublingUpANumber=useMemo(()=>{
+    var doublingUpANumber=useMemo(()=>{                                                                                     
         return slowFunction(num)
-    },[num])
+    },[num])    
     return(
         <div style={styling}>
         
