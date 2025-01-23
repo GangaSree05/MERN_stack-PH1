@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "../../css/Nav.css";
+
+
 import {Link} from 'react-router-dom';
 
 const Navbar = (onLogout) => {
@@ -15,18 +17,34 @@ const Navbar = (onLogout) => {
         <li><Link to='/about' className='link'>About</Link></li>
         <li><Link to='/gallery' className='link'>Gallery</Link></li>
         <li><Link to='/contact' className='link'>Contact</Link></li>
-        <div onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown} className='drop'>
-        <span >Hooks</span>
-          {dropdown && (
-          
-          <ul classname="dropdown">
-            <li><Link to='usestate' className='link' >useState</Link></li>
-            <li><Link to='useeffect' className='link' >useEffect</Link></li>
-            <li><Link to='useapi' className='link' >useEffectAPI</Link></li>
-            <li><Link to='usereducer' className='link' >useReducer</Link></li>
-            <li><Link to='useeffectimg' className='link' >useEffectAPIImage</Link></li>
-          </ul>)}
-        </div>
+        <div onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown} style={{ position: 'relative', display: 'inline-block' }}>
+                        <span>Hooks</span>
+                        {dropdown && (
+                            <ul style={{
+                                position: 'absolute',
+                                top: '100%',
+                                left: 0,
+                                listStyle: 'none',
+                                margin: 0,
+                                padding: '10px',
+                                color:'black',
+
+                                backgroundColor: 'brown',
+                                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+                                borderRadius: '5px',
+                                zIndex: 1,
+                            }}>
+                                <li><Link to='/usestate' className='link'>useState</Link></li>
+                                <li><Link to='/useeffect' className='link'>useEffect</Link></li>
+                                <li><Link to='useapi' className='link'>useApi</Link></li>
+                                <li><Link to='useeffectimg' className='link'>useEffectImage</Link></li>
+                                <li><Link to='usereducer' className='link'>useReducer</Link></li>
+                                <li><Link to='useref' className='link'>useRef</Link></li>
+                                <li><Link to='usememo' className='link' >useMemo</Link></li>
+                                <li><Link to='callback' className='link'>UseCallback</Link></li>
+                            </ul>
+                        )}
+                    </div>
         <li><Link to='/signup' className='link'>Signup</Link></li>
         <li><Link to="/" className="Link" onClick={onLogout}>Logout</Link></li>
       </ol>
