@@ -20,6 +20,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMetods';
 import Student from './components/Functionalcomponents/Hooks/Student';
 import Memo from './components/Functionalcomponents/Memoization/Memo';
+import ClassCompEG from './components/classComponents/ClassCompEG';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -60,6 +61,7 @@ function App() {
               <Route path="/usecall" element={<UseCallback/>} />
               <Route path="/student" element={<Student/>}></Route>
               <Route path="/memo" element={<Memo/>}></Route>
+              <Route path="/classcompeg" element={<ClassCompEG/>}></Route>
             </Routes>
           </>
         ) : (
