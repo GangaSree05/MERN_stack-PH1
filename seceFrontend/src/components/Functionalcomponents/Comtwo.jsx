@@ -1,9 +1,11 @@
 import React from 'react'
+
 const Comtwo = () => {
   return (
     <div>
-      <h2>This is component two</h2>
+      <h4>This is componenet two</h4>
     </div>
   )
 }
+
 export default Comtwo;

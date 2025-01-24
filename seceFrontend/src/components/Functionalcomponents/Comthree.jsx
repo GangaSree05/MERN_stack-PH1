@@ -1,9 +1,11 @@
 import React from 'react'
+
 const Comthree = () => {
   return (
     <div>
-      <h3>This is component three</h3>
+      <p>This is componenet three</p>
     </div>
   )
 }
+
 export default Comthree;

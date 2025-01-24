@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+
+
 const UseEffectAPIimage = () => {
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products/")
@@ -11,6 +14,7 @@ const UseEffectAPIimage = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <div>
       <h3>Image grid from fakestore</h3>
@@ -20,7 +24,7 @@ const UseEffectAPIimage = () => {
             key={product.id}
             style={{
               border: "1px solid #ccc",
-              padding: "10px",  
+              padding: "10px",
               textAlign: "center",
               borderRadius: "5px",
             }}
@@ -36,4 +40,5 @@ const UseEffectAPIimage = () => {
     </div>
   );
 };
-export default UseEffectAPIimage;  UseEffectAPIimage.jsx
+
+export default UseEffectAPIimage;

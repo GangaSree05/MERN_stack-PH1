@@ -11,7 +11,7 @@ const About = () => {
       <textarea value={text} onChange={handleText}/>
       <p>the text is {text}</p>
     </div>
-  );
-};
+  )
+}
 
 export default About
