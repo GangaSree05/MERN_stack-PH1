@@ -25,6 +25,7 @@ const Navbar = () => {
             <span className="link">Hooks</span>
             {dropDown && (
               <ul className="dropdown-box">
+                <li><Link to ="/react-life-cycle" className="link">React lifecycle</Link></li>
                 <li><Link to="/usestate" className="link">useState</Link></li>
                 <li><Link to="/useeffect" className="link">useEffect</Link></li>
                 <li><Link to="/useapi" className="link">useAPI</Link></li>

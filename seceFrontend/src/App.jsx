@@ -17,6 +17,7 @@ import UseMemo from './components/Functionalcomponents/Hooks/UseMemo'
 import UseCallback from './components/Functionalcomponents/Hooks/UseCallback';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMetods';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -46,6 +47,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/gallery" element={<Gallery page="Gallery" img="time" />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/react-life-cycle" element={<ReactLifecycleMethods/>}></Route>
               <Route path="/usestate" element={<UseState />} />
               <Route path="/useeffect" element={<UseEffect />} />
               <Route path="/useapi" element={<UseEffectAPI/>}/>
