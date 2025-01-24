@@ -1,4 +1,5 @@
 import React from 'react'
+
 const Comone = () => {
   return (
     <div>
@@ -6,4 +7,5 @@ const Comone = () => {
     </div>
   )
 }
+
 export default Comone;
