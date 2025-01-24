@@ -1,9 +1,9 @@
 
 import './App.css'
 import Home from './components/Functionalcomponents/Home';
-import About from './components/FunctionalComponents/About';
-import Gallery from './components/FunctionalComponents/gallery';
-import Contact from './components/FunctionalComponents/Contact';
+import About from './components/Functionalcomponents/About';
+import Gallery from './components/Functionalcomponents/gallery';
+import Contact from './components/Functionalcomponents/Contact';
 import Navbar from './components/Functionalcomponents/Navbar';
 import Signup from './components/Functionalcomponents/Signup';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
