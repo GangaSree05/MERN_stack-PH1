@@ -21,6 +21,10 @@ import ReactLifecycleMethods from './components/classComponents/ReactLifecycleMe
 import Student from './components/Functionalcomponents/Hooks/Student';
 import Memo from './components/Functionalcomponents/Memoization/Memo';
 import ClassCompEG from './components/classComponents/ClassCompEG';
+import LazyLoadingWithSuspense from './components/Functionalcomponents/Memoization/LazyLoadingWithSuspense';
+import UseLocalStorage from './components/Functionalcomponents/Hooks/UseLocalStorage';
+import Hoc from './components/Functionalcomponents/HoC/Hoc';
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -61,7 +65,10 @@ function App() {
               <Route path="/usecall" element={<UseCallback/>} />
               <Route path="/student" element={<Student/>}></Route>
               <Route path="/memo" element={<Memo/>}></Route>
+              <Route path="/lazy" element={<LazyLoadingWithSuspense/>}></Route>
               <Route path="/classcompeg" element={<ClassCompEG/>}></Route>
+              <Route path="/use-custom" element={<UseLocalStorage />}></Route>
+              <Route path="/hoc" element={<Hoc/>}></Route>
             </Routes>
           </>
         ) : (
