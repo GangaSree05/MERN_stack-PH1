@@ -10,7 +10,7 @@ const trackingButtonComponent = (Component) => {
                 <Component {...props}/>
             </div>
         )
-    }
+    }                                                                                                                                                                                                                        
 }
 
 export default trackingButtonComponent;

@@ -24,9 +24,13 @@ import ClassCompEG from './components/classComponents/ClassCompEG';
 import LazyLoadingWithSuspense from './components/Functionalcomponents/Memoization/LazyLoadingWithSuspense';
 import UseLocalStorage from './components/Functionalcomponents/Hooks/UseLocalStorage';
 import Hoc from './components/Functionalcomponents/HoC/Hoc';
+import SignUpMain from './components/SignUp main';
+import LoginMain from './components/Login Main';
+
 
 
 function App() {
+  
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState({ username: '', password: '' }); 
 
@@ -69,6 +73,8 @@ function App() {
               <Route path="/classcompeg" element={<ClassCompEG/>}></Route>
               <Route path="/use-custom" element={<UseLocalStorage />}></Route>
               <Route path="/hoc" element={<Hoc/>}></Route>
+              <Route path="/sign-up" element={<SignUpMain/>}></Route>
+              <Route path="/log-in" element={<LoginMain/>}></Route>
             </Routes>
           </>
         ) : (
